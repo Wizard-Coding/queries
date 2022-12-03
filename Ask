@@ -1,3 +1,5 @@
+#poly includes inher?
+
 class employee:
     def __init__(self,name,age):
         self.emp_name = name
