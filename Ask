@@ -1,0 +1,23 @@
+class employee:
+    def __init__(self,name,age):
+        self.emp_name = name
+        self.emp_age = age
+
+    def displayinfo(self):
+        print(self.emp_name,self.emp_age)
+
+class apay(employee):
+    def __init__(self,name,age,salary):
+        super().__init__(name, age)
+        self.emp_salary = salary
+    def displaynameagesalary(self):
+        print(self.emp_name,self.emp_age,self.emp_salary)
+
+emp1 = employee('Maaz',27)
+emp2 = employee('Rashul',42)
+
+emp1 = apay('Maaz',27,20000)
+emp2 = apay('Rashul',42,40000)
+
+emp1.displaynameagesalary()
+emp2.displaynameagesalary()
